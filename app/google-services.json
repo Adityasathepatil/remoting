@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "265018599512",
+    "project_id": "remoting-bbad6",
+    "storage_bucket": "remoting-bbad6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265018599512:android:4c53ed40628e6afcff422d",
+        "android_client_info": {
+          "package_name": "com.techtool.remoting"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCROQoHCZU5r0KSZaiVlaiI3XpU2qaMbeE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

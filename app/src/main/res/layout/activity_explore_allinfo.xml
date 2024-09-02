@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".explore_allinfo">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/cd"
+        app:cardCornerRadius="16dp"
+
+        android:layout_margin="16dp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imgview"
+            android:scaleType="fitXY"
+            android:src="@drawable/baseline_home_24">
+
+        </ImageView>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/experience"
+        android:text="Mytechtools"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/cd"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        >
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/role"
+        android:text="product manager"
+        android:layout_below="@id/experience"
+        android:layout_marginTop="15dp"
+        android:textSize="16dp"
+        android:layout_marginStart="16dp"
+        >
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/location"
+        android:text="5lpa"
+        android:layout_below="@id/role"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:textSize="16dp">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/description"
+        android:text="this role is one of best role"
+        android:layout_below="@id/location"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:textSize="16dp">
+
+    </TextView>
+
+</RelativeLayout>

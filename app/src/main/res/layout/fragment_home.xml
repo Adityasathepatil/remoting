@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/searchview"
+        android:queryHint="Search"
+        android:iconifiedByDefault="false"
+        android:queryBackground="@android:color/transparent"
+        android:searchIcon="@drawable/search"
+        android:submitBackground="@android:color/transparent"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@id/search_view"
+        android:id="@+id/scrollview"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:orientation="horizontal">
+
+            <!-- First CardView -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="240dp"
+                android:layout_height="200dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/pink"
+                android:id="@+id/firstcardview"
+                app:cardElevation="10dp"
+                android:background="@color/white"
+                app:cardCornerRadius="12dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <!-- Bold Text: Top Jobs This Week -->
+                    <TextView
+                        android:id="@+id/textTopJobs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Top Jobs This Week"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="8dp"/>
+
+                    <!-- Short Text: Apply and Upgrade -->
+                    <TextView
+                        android:id="@+id/textApplyUpgrade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Apply and Upgrade for Better Opportunities"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:layout_below="@id/textTopJobs"
+                        android:layout_marginBottom="16dp"/>
+
+                    <!-- Button with Vector Next -->
+                    <RelativeLayout
+                        android:id="@+id/buttonLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textApplyUpgrade">
+
+                        <Button
+                            android:id="@+id/btnNext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Explore Now"
+                            android:textSize="18sp"
+                            android:textColor="@color/white"
+                            android:background="@drawable/btnbg"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:paddingTop="12dp"
+                            android:paddingBottom="12dp"/>
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center_vertical|end"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="10dp"
+                            android:src="@drawable/next"
+                            />
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Second CardView -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="240dp"
+                android:layout_height="200dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                app:cardElevation="10dp"
+                android:id="@+id/secondcd"
+                android:backgroundTint="@color/blue"
+                android:background="@color/white"
+                android:layout_toRightOf="@id/firstcardview"
+                app:cardCornerRadius="12dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <!-- Bold Text: Top Jobs This Week -->
+                    <TextView
+                        android:id="@+id/textTopInternship"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Top Intern This Week"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="8dp"/>
+
+                    <!-- Short Text: Apply and Upgrade -->
+                    <TextView
+                        android:id="@+id/textApplyUpgrade2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Apply for internship for Better Opportunities"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:layout_below="@id/textTopInternship"
+                        android:layout_marginBottom="16dp"/>
+
+                    <!-- Button with Vector Next -->
+                    <RelativeLayout
+                        android:id="@+id/buttonLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textApplyUpgrade2">
+
+                        <Button
+                            android:id="@+id/btnNext2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Explore Now"
+                            android:textSize="18sp"
+                            android:textColor="@color/white"
+                            android:background="@drawable/btnbg"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:paddingTop="12dp"
+                            android:paddingBottom="12dp"/>
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center_vertical|end"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="10dp"
+                            android:src="@drawable/next"
+                            />
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </HorizontalScrollView>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/recommanded"
+    android:text="Recommanded"
+    android:layout_below="@id/scrollview"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="15dp"
+    android:textSize="20dp"
+    android:textColor="@color/green"
+    android:textStyle="bold">
+
+</TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerviewRecommanded"
+        android:layout_below="@id/recommanded"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+
+
+        tools:listitem="@layout/recommanded_items"
+        android:layout_marginEnd="26dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

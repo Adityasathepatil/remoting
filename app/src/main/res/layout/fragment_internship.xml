@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UI.internship">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/searchview"
+        android:queryHint="Search"
+        android:iconifiedByDefault="false"
+        android:queryBackground="@android:color/transparent"
+        android:searchIcon="@drawable/search"
+        android:submitBackground="@android:color/transparent"
+        />
+
+   <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="250dp"
+       android:layout_below="@id/search_view"
+       android:layout_margin="16dp"
+       android:id="@+id/cardview"
+       android:backgroundTint="@color/green"
+       app:cardCornerRadius="12dp"
+       android:elevation="15dp">
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/maintext"
+             android:text="Start your Corporate journey\n with the internship"
+             android:layout_centerHorizontal="true"
+             android:textColor="@color/white"
+             android:layout_marginTop="15dp"
+             android:textSize="20dp"
+             android:textStyle="bold"
+             android:textAllCaps="true">
+
+         </TextView>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="60dp"
+             android:layout_below="@id/maintext"
+             android:layout_marginStart="50dp"
+             android:layout_marginEnd="30dp"
+             android:layout_marginTop="10dp"
+             android:id="@+id/ll1"
+
+             android:weightSum="1"
+             >
+
+
+
+             <ImageView
+             android:layout_width="40dp"
+             android:layout_height="40dp"
+             android:src="@drawable/google"
+                 android:layout_marginEnd="25dp"
+             android:layout_marginTop="10dp">
+
+         </ImageView>
+
+             <ImageView
+                 android:layout_width="40dp"
+                 android:layout_height="40dp"
+                 android:layout_marginEnd="25dp"
+                 android:src="@drawable/facebook"
+                 android:layout_marginTop="10dp">
+
+             </ImageView>
+
+             <ImageView
+                 android:layout_width="40dp"
+                 android:layout_height="40dp"
+                 android:src="@drawable/oracle"
+                 android:layout_marginEnd="25dp"
+                 android:layout_marginTop="10dp">
+
+             </ImageView>
+
+             <ImageView
+                 android:layout_width="40dp"
+                 android:layout_height="40dp"
+                 android:src="@drawable/netflix"
+                 android:layout_marginEnd="15dp"
+                 android:layout_marginTop="10dp">
+
+             </ImageView>
+
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="60dp"
+             android:layout_below="@id/ll1"
+             android:layout_marginStart="50dp"
+             android:layout_marginEnd="30dp"
+             android:layout_marginTop="10dp"
+             android:id="@+id/ll2"
+
+             android:weightSum="1"
+             >
+
+
+
+             <ImageView
+                 android:layout_width="40dp"
+                 android:layout_height="40dp"
+                 android:src="@drawable/acrobat"
+                 android:layout_marginEnd="25dp"
+                 android:layout_marginTop="10dp">
+
+             </ImageView>
+
+             <ImageView
+                 android:layout_width="40dp"
+                 android:layout_height="40dp"
+                 android:layout_marginEnd="25dp"
+                 android:src="@drawable/social"
+                 android:layout_marginTop="10dp">
+
+             </ImageView>
+
+             <ImageView
+                 android:layout_width="40dp"
+                 android:layout_height="40dp"
+                 android:src="@drawable/paypal"
+                 android:layout_marginEnd="25dp"
+                 android:layout_marginTop="10dp">
+
+             </ImageView>
+
+             <ImageView
+                 android:layout_width="40dp"
+                 android:layout_height="40dp"
+                 android:src="@drawable/flipkart"
+                 android:layout_marginEnd="15dp"
+                 android:layout_marginTop="10dp">
+
+             </ImageView>
+
+         </LinearLayout>
+
+     </RelativeLayout>
+
+
+   </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recommanded"
+        android:text="Internship"
+        android:layout_below="@id/cardview"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:textColor="@color/green"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerviewinternship"
+        android:layout_below="@id/recommanded"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+
+        android:layout_marginEnd="26dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+</RelativeLayout>
